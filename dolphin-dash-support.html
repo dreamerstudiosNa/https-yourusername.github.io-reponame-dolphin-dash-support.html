@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dolphin Dash — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A2A43;
+    --teal: #1C7293;
+    --seafoam: #5FD6C0;
+    --coral: #FF8966;
+    --bg: #F4FAFB;
+    --text: #102A3C;
+    --muted: #51707E;
+    --card-bg: #FFFFFF;
+    --border: #DCEAEE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  header.hero {
+    position: relative;
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    color: #fff;
+    padding: 56px 24px 84px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 5vw, 42px);
+    margin: 0 0 8px;
+  }
+  .hero p.tag {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+  }
+  .wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 60px; display: block; }
+  nav.tabs {
+    max-width: 720px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 24px;
+  }
+  nav.tabs a {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 14px rgba(10,42,67,0.08);
+    transition: color .15s ease, border-color .15s ease;
+  }
+  nav.tabs a.active { color: var(--teal); border-color: var(--seafoam); }
+  nav.tabs a:hover { color: var(--teal); }
+  nav.tabs a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+  main { max-width: 720px; margin: 48px auto 0; padding: 0 24px 64px; }
+  section.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 28px 30px;
+    margin-bottom: 20px;
+  }
+  section.card h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 20px;
+    color: var(--navy);
+    margin: 0 0 12px;
+  }
+  section.card p { margin: 0 0 12px; }
+  section.card p:last-child { margin-bottom: 0; }
+  .faq-item { margin-bottom: 18px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-item h3 { font-size: 15px; margin: 0 0 4px; color: var(--teal); }
+  .faq-item p { color: var(--muted); margin: 0; font-size: 15px; }
+  a.contact-btn {
+    display: inline-block;
+    margin-top: 4px;
+    background: var(--coral);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 15px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  a.contact-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(255,137,102,0.35); }
+  a.contact-btn:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+  footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    nav.tabs { margin-top: -32px; }
+    section.card { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🐬 Dolphin Dash</h1>
+  <p class="tag">Support</p>
+  <svg class="wave" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 C150,60 350,0 500,30 C650,60 850,0 1000,30 L1000,60 L0,60 Z" fill="#F4FAFB"></path>
+  </svg>
+</header>
+
+<nav class="tabs">
+  <a href="dolphin-dash-support.html" class="active">Support</a>
+  <a href="dolphin-dash-privacy.html">Privacy Policy</a>
+</nav>
+
+<main>
+  <section class="card">
+    <h2>About Dolphin Dash</h2>
+    <p>Dolphin Dash is a fast, tap-to-flap underwater endless runner. Dodge coral, jellyfish, and other reef hazards and see how far you can swim.</p>
+  </section>
+
+  <section class="card">
+    <h2>Contact us</h2>
+    <p>Got a bug to report, a question, or an idea for the game? Email us and we'll get back to you.</p>
+    <a class="contact-btn" href="mailto:dev.dreamer.studios@gmail.com">Email Support</a>
+  </section>
+
+  <section class="card">
+    <h2>Troubleshooting</h2>
+    <div class="faq-item">
+      <h3>My high score disappeared</h3>
+      <p>High scores are saved locally on your device. Reinstalling the app or switching to a new device will reset it — there's currently no cloud sync.</p>
+    </div>
+    <div class="faq-item">
+      <h3>I don't hear any sound</h3>
+      <p>Check that your device isn't on silent/mute and that in-game sound is turned on from the main menu.</p>
+    </div>
+    <div class="faq-item">
+      <h3>The game crashed or froze</h3>
+      <p>Try closing and reopening the app first. If it keeps happening, email us with your device model and iOS version so we can look into it.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Terrell Rowe. Dolphin Dash is not affiliated with or endorsed by Apple Inc.
+</footer>
+
+</body>
+</html>
